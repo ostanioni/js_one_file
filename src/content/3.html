@@ -1,0 +1,108 @@
+<hЗапись изменений в репозиторий</h2>
+  <h3>Проверка состояния файлов</h3>
+  <div>
+    <code>
+      $ git status
+    </code>
+  </div>
+  <h3>Слежение за новыми файлами</h3>
+  <div>
+    <code>
+      $ git add README
+    </code>
+  </div>
+  <h3>Краткий отчет о состоянии</h3>
+  <div>
+    <code>
+      $ git status -s
+    </code>
+  <div>
+  <div>
+    <code>
+      $ git status --short
+    </code>
+  </div>
+  <h3>Фиксация изменений</h3>
+  <div>
+    <code>
+      $ git commit
+    </code>
+  </div>
+  <div>
+    Сообщение фиксации можно задать и в команде commit, поставив перед ним флаг -m, как в следующем примере:
+  </div>
+  <div>
+    <code>
+      $ git commit -m "Story 182: Fix benchmarks for speed"
+    </code>
+  </div>
+  <h3>Перемещение файлов</h3>
+  <div>
+    При этом, как ни странно, в Git есть команда mv. Для переименования файла можно написать:
+  </div>
+  <div>
+    <code>
+      $ git mv file_from file_to
+    </code>
+  </div>
+  <h3>Добавление удаленных репозиториев</h3>
+  <div>
+    <code>
+      <pre>
+          $ git remote
+          origin
+          $ git remote add pb https://github.com/paulboone/ticgit
+          $ git remote -v
+          origin https://github.com/schacon/ticgit (fetch)
+          origin https://github.com/schacon/ticgit (push)
+          pb https://github.com/paulboone/ticgit (fetch)
+          pb https://github.com/paulboone/ticgit (push)
+      </pre>
+    </code>
+  </div>
+  <div>
+    Теперь вместо полного URL-адреса в командную строку можно вводить имя pb. К примеру, для скачивания всей информации, которая есть у коллеги, но отсутствует у вас, используйте команду git fetch pb:
+  </div>
+  <div>
+    <code>
+      <pre>
+          $ git fetch pb
+          remote: Counting objects: 43, done.
+          remote: Compressing objects: 100% (36/36), done.
+          remote: Total 43 (delta 10), reused 31 (delta 5)
+          Unpacking objects: 100% (43/43), done.
+          From https://github.com/paulboone/ticgit
+          * [new branch] master -> pb/master
+          * [new branch] ticgit -> pb/ticgit
+      </pre>
+    </code>
+  </div>
+  <h3>Управление ветками</h3>
+  <div>Команда git branch позволяет не только создавать и удалять ветки. Запущенная без аргументов, она выводит на экран список имеющихся веток:</div>
+  <div>
+    <code>
+      <pre>
+        $ git branch
+        iss53
+        * master
+        testing
+      </pre>
+    </code>
+  </div>
+  <div>Создадим ветку dev</div>
+  <div>
+    <code>
+      <pre>
+        $ git branch dev
+      </pre>
+    </code>
+  </div>
+  <div>Меняем текущую ветку master на dev</div>
+  <div>
+    <code>
+      <pre>
+        $ git checkout dev
+      </pre>
+    </code>
+  </div>
+  <div>

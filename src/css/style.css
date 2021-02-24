@@ -1,0 +1,45 @@
+html{
+  font-size: 24px;
+}
+* {
+  box-sizing: border-box;
+  transition: color 0.5s;
+  transition: background-color 0.5s;
+   /* transition: background-color, color 0.1s;*/
+}
+body {
+  padding: 1rem;
+  margin: 0;
+  background-color: #CDD1DE;
+}
+h1,h2,h3,h4,h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  font-size: 1,5rem;
+}
+h2 {
+  font-size: 1,4rem;
+}
+h3 {
+  font-size: 1,3rem;
+}
+h4 {
+  font-size: 1,2rem;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+code {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  border: 1px solid #000;
+  background-color: #225;
+  color:antiquewhite;
+  width: auto;
+  /*margin: 0.5rem;*/
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}

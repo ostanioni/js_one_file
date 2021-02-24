@@ -1,0 +1,31 @@
+{
+  "git.ignoreLimitWarning": true,
+  "workbench.iconTheme": "vscode-great-icons",
+  "editor.fontSize": 23,
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "terminal.integrated.fontSize": 19,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
+  "emmet.includeLanguages": {
+        "vue-html": "html",
+        "vue": "html",
+        "javascript" : "javascriptreact" 
+  },
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx",
+    "xml": {
+        "attr_quotes": "single"
+    }
+  },
+  "editor.tabSize": 2,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "editor.detectIndentation": false,
+  "files.eol": "\n",
+  "editor.multiCursorModifier": "ctrlCmd",
+  "explorer.confirmDragAndDrop": false,
+  "files.autoSaveDelay": 10000,
+  "eslint.validate": [ "javascript", "html" ],
+  "javascript.validate.enable": true,
+}
