@@ -2,17 +2,17 @@
 /* tslint:disabled*/
 
 const {merge} = require('webpack-merge');
-const common = require('./webpack.common.js');
-const path = require('path');
-const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default;
-const TerserPlugin = require('terser-webpack-plugin');
-const CompressionPlugin = require('compression-webpack-plugin');
+const common = require('./webpack.common.js')
+const path = require('path')
+const HtmlMinimizerPlugin = require("html-minimizer-webpack-plugin")
+const MiniCssExtractPlugin = require("mini-css-extract-plugin")
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const HTMLInlineCSSWebpackPlugin = require("html-inline-css-webpack-plugin").default
+const TerserPlugin = require('terser-webpack-plugin')
+const CompressionPlugin = require('compression-webpack-plugin')
 
 console.clear()
-console.log('production-mode starting ...')
+console.log('\x1b[30m\x1b[44m%s\x1b[0m', 'production-mode starting ...')
 
 const $SOURCE_MAP = false
 const CONTEXT = path.resolve(__dirname, '../')

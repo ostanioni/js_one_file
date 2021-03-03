@@ -10,7 +10,8 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 
 
 console.clear()
-console.log ( 'dev-mode starting ...' )
+console.log (  )
+console.log('\x1b[0m\x1b[42m\x1b[30m%s\x1b[0m', 'dev-mode starting ...');
 
 
 /*_____________CONTEXT_______________ */
