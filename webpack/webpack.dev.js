@@ -37,11 +37,22 @@ const CSS = {
 module.exports = merge(common, {
   mode: 'development',
   devServer: {
+    server: 'http',
+    bonjour: false,
+    compress: false,
+    allowedHosts: 'all', // allowedHosts: ['.host.com', 'host2.com'],
     historyApiFallback: true,
-    contentBase: './dist',
+    // contentBase: './dist',
     hot: true,
     host: '127.0.0.7',
-    port: 3001
+    port: 3001,
+    open: true,
+    client: {
+      logging: 'info',
+      overlay: true,
+      progress: true,
+      reconnect: true,
+    },
   },
   devtool: 'cheap-module-source-map', // 'source-map',
   module: {

@@ -70,7 +70,7 @@ module.exports = merge(common, {
     minimizer: [
       new HtmlMinimizerPlugin(),
       new CssMinimizerPlugin(cssMinimizerOptions),
-      new TerserPlugin(terserOptions)
+      new TerserPlugin(terserOptions),
     ],
   }
 });
